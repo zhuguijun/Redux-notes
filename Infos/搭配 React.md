@@ -34,7 +34,7 @@ Redux 和 React 之间没有关系。Redux 支持 React、Angular、Ember、jQue
       }}
     >
       {text}
-    &lt;</li>
+    &lt;/li>
   )
 
   Todo.propTypes = {
@@ -97,11 +97,11 @@ import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
+  &lt;div>
+    &lt;AddTodo />
+    &lt;VisibleTodoList />
+    &lt;Footer />
+  &lt;/div>
 )
 
 export default App
@@ -125,9 +125,9 @@ import App from './components/App'
 let store = createStore(todoApp)
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  &lt;Provider store={store}>
+   &lt;App />
+  &lt;/Provider>,
   document.getElementById('root')
 )
 </pre>
